@@ -14,32 +14,32 @@ public class Task1 {
         newBibika.PrintCarInfo();
     }
 
-    static class Car{
-    private String model;
-    private String color;
-    private int yearMade;
-    public void setModel(String modelType){
-        model = modelType;
-    }
-    public void setColor(String colorAuto){
-        color = colorAuto;
-    }
-    public void setYearMade(int yearAuto){
-        yearMade = yearAuto;
-    }
-    public String getModel(String modelType){
-        return model;
-    }
-    public String getColor(String colorAuto) {
-        return color;
-    }
-    public int getYearMade(int yearAuto){
-        return yearMade;
-    }
-        private void PrintCarInfo(){
-            System.out.println("Car model: "+ model);
-            System.out.println("Car color: "+ color);
-            System.out.println("Car develop year: " + yearMade);
-        }
-    }
+//    static class Car{
+//    private String model;
+//    private String color;
+//    private int yearMade;
+//    public void setModel(String modelType){
+//        model = modelType;
+//    }
+//    public void setColor(String colorAuto){
+//        color = colorAuto;
+//    }
+//    public void setYearMade(int yearAuto){
+//        yearMade = yearAuto;
+//    }
+//    public String getModel(String modelType){
+//        return model;
+//    }
+//    public String getColor(String colorAuto) {
+//        return color;
+//    }
+//    public int getYearMade(int yearAuto){
+//        return yearMade;
+//    }
+//        private void PrintCarInfo(){
+//            System.out.println("Car model: "+ model);
+//            System.out.println("Car color: "+ color);
+//            System.out.println("Car develop year: " + yearMade);
+//        }
+//    }
 }

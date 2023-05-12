@@ -1,14 +1,15 @@
 package day7;
 
 public class Player {
-    public int stamina;
-    public static int MAX_STAMINA=100;
-    public static int MIN_STAMINA=0
-            ;
-    public static int countPlayers;
-    public Player(int stamina){
-        if (countPlayers< 6) {
-            this.stamina = stamina;
+    private int stamina;                            // ИСПРАВЛЕНО: заменен на private
+    public static final int MAX_STAMINA=100;        // ИСПРАВЛЕНО: добавлен final
+    public static final int MIN_STAMINA=0;          // ИСПРАВЛЕНО: добавлен final
+
+    private static int countPlayers;                // ИСПРАВЛЕНО: заменен на private
+
+    public Player(int stamina) {
+        this.stamina = stamina;                     // ИСПРАВЛЕНО: вынесено перед IF
+        if (countPlayers < 6) {
             countPlayers++;
 //            System.out.println("countPlayers "+countPlayers);
 //            info();

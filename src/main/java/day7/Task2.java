@@ -21,7 +21,8 @@ public class Task2 {
         Player forwardFast = new Player((int)(Math.random()*10+90));
         Player arbitr = new Player((int)(Math.random()*10+90));
         //System.out.println("forward.stamina "+forward.stamina);
-        while (forward.stamina > MIN_STAMINA){
+        while (forward.getStamina() > MIN_STAMINA){                         // ИСПРАВЛЕНО: и обращайся к полю через геттер
+           //forward.getStamina();
             forward.run();
         }
         //System.out.println("forward.stamina "+forward.stamina);

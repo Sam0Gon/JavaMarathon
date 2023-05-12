@@ -29,7 +29,6 @@ public class Task1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int x = scan.nextInt();
-        int stop;                                                       //pause iteration
         int [] massiv1 = new int[x];
         for (int i=0;i < x; i++) massiv1[i] = (int) (Math.random() * 10); // заполнение массива случайными числами
         int countMore8 = 0;
@@ -40,21 +39,11 @@ public class Task1 {
         System.out.println("Введено число "+x+" Сгенерирован следующий массив:");
         System.out.println(Arrays.toString(massiv1));
         for(int a : massiv1){
-            if (a == 0) continue;
             if (a > 8) countMore8++;
             if (a == 1) countEquals1++;
             if (a%2 == 0) countEven++;
             else countOdd++;
-            sumAllnum = sumAllnum + a;
-//            System.out.println();
-//            System.out.println("Информация о массиве:");
-//            System.out.println("Длина массива: "+ x);
-//            System.out.println("Количество чисел больше 8: "+ countMore8);
-//            System.out.println("Количество чисел равных 1: "+ countEquals1);
-//            System.out.println("Количество четных чисел: "+ countEven);
-//            System.out.println("Количество нечетных чисел: "+ countOdd);
-//            System.out.println("Сумма всех элементов массива: "+ sumAllnum);
-            //stop = scan.nextInt();
+            sumAllnum += a;
         }
         System.out.println();
         System.out.println("Информация о массиве:");

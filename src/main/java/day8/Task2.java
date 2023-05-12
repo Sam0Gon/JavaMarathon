@@ -6,7 +6,7 @@ public class Task2 {
     // информацию о самолете, аналогично вызову метода info().
     public static void main(String[] args) {
         Airplane airplane = new Airplane ("Boeing", 2000, 150, 10000);
-        airplane.toString();
+        //airplane.toString();                      ИСПРАВЛЕНО - ДОБАВИЛ В КОММЕНТАРИЙ
         System.out.println(airplane);
 
     }

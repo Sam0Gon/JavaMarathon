@@ -27,7 +27,7 @@ public class Task3 {
         }
         for (int i=0;i < x; i++) {
             for (int k = 0; k < y; k++) {
-                summNextLine = summNextLine + massiv[i][k];
+                summNextLine += massiv[i][k];      // ИСПРАВЛЕНО
             }
             if (summNextLine >= summLine){
                 summLine = summNextLine;

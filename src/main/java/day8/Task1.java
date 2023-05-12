@@ -20,8 +20,8 @@ public class Task1 {
 
         long startTime2 = System.currentTimeMillis();
         for (int i = 0; i <= 20000; i++) {
-            second = second.concat(" ");
-            second = second.concat(String.valueOf(i));
+            second.concat(" ");                         // ИСПРАВЛЕНО -удалено "second = ..."
+            second.concat(String.valueOf(i));              // ИСПРАВЛЕНО -удалено "second = ..."
         }
         long stopTime2 = System.currentTimeMillis();
         System.out.println(second);

@@ -11,7 +11,7 @@ public class Task2 {
 //Использовать сортировку запрещено.
     public static void main(String[] args) {
         int [] massiv = new int[100];
-        for (int i=0;i < 100; i++) massiv[i] = (int) (Math.random() * 10000); // заполнение массива случайными числами
+        for (int i=0;i < massiv.length; i++) massiv[i] = (int) (Math.random() * 10000); // заполнение массива случайными числами. Исправлено конечное значение.
         int max = massiv[0];
         int min = massiv[0];
         int countZero = 0;
